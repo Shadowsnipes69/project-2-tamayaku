@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropout Bear Tamagotchi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+ 
+<header class="stats">
+    <div class="stat">
+        <span>🍔 Honger</span>
+        <div class="bar"><div class="fill hunger"></div></div>
+    </div>
+ 
+    <div class="stat">
+        <span>😴 Slaap</span>
+        <div class="bar"><div class="fill sleep"></div></div>
+    </div>
+ 
+    <div class="stat">
+        <span>🎮 Plezier</span>
+        <div class="bar"><div class="fill fun"></div></div>
+    </div>
+</header>
+ 
+<main class="tamagotchi-zone">
+    <div class="bear">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+    </div>
+</main>
+ 
+<!-- TEKST VAN TAMAGOTCHI -->
+<p id="message">Hallo! Zorg goed voor mij 💜</p>
+ 
+<!-- INPUT -->
+<input id="command" placeholder="Typ: voeden / slapen / spelen">
+<button id="send">OK</button>
+
+<!-- MUZIEK OP ACHTERGROND -->
+<audio id="muziek" autoplay loop>
+    <source src="track website v.1.mp3" type="audio/mpeg">
+</audio>
+ 
+<script src="script.js"></script>
+<script>
+    document.getElementById('muziek').play();
+</script>
+ 
+</body>
+</html>
