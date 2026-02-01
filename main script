@@ -1,54 +1,43 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <title>Dropout Bear Tamagotchi</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Mijn Tamagotchi</title>
+  <link rel="stylesheet" href="tama.css">
 </head>
 <body>
- 
- 
-<header class="stats">
-    <div class="stat">
-        <span>🍔 Honger</span>
-        <div class="bar"><div class="fill hunger"></div></div>
-    </div>
- 
-    <div class="stat">
-        <span>😴 Slaap</span>
-        <div class="bar"><div class="fill sleep"></div></div>
-    </div>
- 
-    <div class="stat">
-        <span>🎮 Plezier</span>
-        <div class="bar"><div class="fill fun"></div></div>
-    </div>
-</header>
- 
-<main class="tamagotchi-zone">
-    <div class="bear">
-        <div class="eye left"></div>
-        <div class="eye right"></div>
-        <div class="mouth"></div>
-    </div>
-</main>
- 
-<!-- TEKST VAN TAMAGOTCHI -->
-<p id="message">Hallo! Zorg goed voor mij 💜</p>
- 
-<!-- INPUT -->
-<input id="command" placeholder="Typ: voeden / slapen / spelen">
-<button id="send">OK</button>
 
-<!-- MUZIEK OP ACHTERGROND -->
-<audio id="muziek" autoplay loop>
-    <source src="track website v.1.mp3" type="audio/mpeg">
+  <div class="container">
+  <h1>Tamagotchi</h1>
+
+  <div class="stats">
+    <p>Honger</p>
+    <div class="bar"><div class="fill hunger"></div></div>
+
+    <p>Slaap</p>
+    <div class="bar"><div class="fill sleep"></div></div>
+
+    <p>Plezier</p>
+    <div class="bar"><div class="fill fun"></div></div>
+  </div>
+
+  <div class="pet-box">
+    <img src="Play GIF rayquaza.gif.gif" alt="">
+  </div>
+
+  <p id="message">Hoi, zorg goed voor mij!</p>
+
+  <div class="buttons">
+    <button id="food">🍎 Eten</button>   <button id="sleep">😴 Slapen</button>   <button id="play">🎮 Spelen</button>
+  </div>
+
+  
+
+
+  <audio controls autoplay id="music">
+  <source src="track website v.1.wav" type="audio/mp3">
 </audio>
  
-<script src="script.js"></script>
-<script>
-    document.getElementById('muziek').play();
-</script>
- 
+<script src="tamagot.js"></script>
 </body>
 </html>
