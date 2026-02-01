@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tama.css">
+</head>
+<body>
+
+    <h1> Mijn Tamagotchi</h1>
+
+    <h3>Status</h3>
+
+    <li>Honger: 5</li>
+    <li>Blijheid: 5</li>
+    <li>Energie: 5</li>
+
+
+    <h3>Acties</h3>
+    <button>Eten geven </button>
+    <button>Spelen </button>
+    <button>Slapen </button>
+
+</body>
+</html>
+
+
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+ button {
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px;
+}
